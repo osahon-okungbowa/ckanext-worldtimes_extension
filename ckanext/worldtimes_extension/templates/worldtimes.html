@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>{% block title %}World Time{% endblock title %}</title>
+    </head>
+    <body>
+        {% block body %}
+            <h2>The Time Across The World</h2>
+            <table>
+                {% for timezone in  pytz.all_timezones %}
+                    <tr>
+                        <td>
+                            {{ timezone }}
+                        </td>
+                        <td>
+                                {{ current_date_time.astimezone(pytz.timezone(timezone)).strftime('%I:%M%p %d %b %Y') }}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% endblock body %}
+    </body>
+</html>
