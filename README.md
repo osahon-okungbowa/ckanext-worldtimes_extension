@@ -15,7 +15,7 @@
 - Open up your browser and visit : *[your_ckan_domain_name]/worldtimes* to see the extension in action
 
 
-## *EXTENSION DEPENDENCIES*
+## EXTENSION DEPENDENCIES
 
 The script depends on the following python packages:
 
